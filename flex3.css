@@ -1,0 +1,148 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background-color: tomato;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px inset #336699;
+    align-items: baseline;
+    align-content: center;
+}
+
+
+.container div{
+    //the child
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid #FFA07A;
+    flex: 0 1 10em;
+    // item property flex: flex-grow flex-shrink flex-basis;
+}
+
+.boxen{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+}
+
+/*
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex {
+  margin: 10px;
+  border: 2px solid #FF6347;
+  border-color: #cabbfd #f7c3bb #f7c3bb #cabbfd;
+  display: flex;
+  counter-reset: unicornCounter;
+  position: relative;
+  
+  &:before,
+  &:after{
+    content: "flex-direction: row";
+    position: absolute;
+    right: 0;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    padding: 5px 10px;
+  }
+  
+  &:nth-child(1) {
+    flex-direction: row;
+    direction: ltr;
+    
+    &:before{
+      content: "flex-direction: row";
+    }
+    
+    &:after {
+      content:"direction: ltr";
+      bottom: 0;
+    }
+  }
+  
+  &:nth-child(2) {
+    flex-direction: row;
+    direction: rtl;
+    
+    &:before{
+      content: "flex-direction: row";
+      right: auto;
+      left: 0;
+    }
+    
+    &:after {
+      content:"direction: rtl";
+      bottom: 0;
+      right: auto;
+      left: 0;
+    }
+  }
+  
+  &:nth-child(3) {
+    flex-direction: row-reverse;
+    direction: ltr;
+    
+    &:before{
+      content: "flex-direction: row-reverse";
+      right: auto;
+      left: 0;
+    }
+    
+    &:after {
+      content:"direction: ltr";
+      bottom: 0;
+      right: auto;
+      left: 0;
+    }
+  }
+  
+  &:nth-child(4) {
+    flex-direction: row-reverse;
+    direction: rtl;
+    
+    &:before{
+      content: "flex-direction: row-reverse";
+    }
+    
+    &:after {
+      content:"direction: rtl";
+      bottom: 0;
+    }
+  }
+  
+  div {
+    width: 80px;
+    height: 80px;
+    background-color: #f36;
+    margin: 0 5px;
+    counter-increment: unicornCounter;
+    position: relative;
+    
+    &:before {
+      content: counter(unicornCounter);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3vw;
+      color: #fff;
+      text-shadow: 2px 2px 1px rgba(0,0,0,.25);
+    }
+  }
+}*/

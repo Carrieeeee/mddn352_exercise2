@@ -1,0 +1,31 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.container {
+    padding: 10px;
+    display: grid | inline-grid;
+    grid-template-columns: repeat(5, 20px [col-start]);
+    grid-template-rows: 25% 100px auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    border: 1px solid #336699;
+}
+
+.container div {
+    padding: 10px;
+    border: 1px solid #CC2233;
+}
+
+.item{
+    grid-column-start: col-start 2;
+}
+
+.container {
+    grid-template-columns: 1 fr 1 fr 1 fr;
+}
